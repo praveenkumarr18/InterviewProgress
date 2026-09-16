@@ -1,0 +1,26 @@
+spring:
+  application:
+    name: interview-compass-backend
+  datasource:
+    url: jdbc:mysql://localhost:3306/interview_compass?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC
+    username: root
+    password: root
+  jpa:
+    hibernate:
+      ddl-auto: update
+    open-in-view: false
+    properties:
+      hibernate:
+        format_sql: true
+    show-sql: true
+
+server:
+  port: 8080
+
+app:
+  storage:
+    resume-directory: uploads/resumes
+  security:
+    jwt:
+      secret: aW50ZXJ2aWV3LWNvbXBhc3MtZGV2ZWxvcG1lbnQtc2VjcmV0LWtleS1pbnRlcnZpZXctY29tcGFzcy1kZXZlbG9wbWVudC1zZWNyZXQta2V5
+      expiration-minutes: 240
