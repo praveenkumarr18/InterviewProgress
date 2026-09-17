@@ -23,23 +23,7 @@ import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
 
-@ExtendWith(MockitoExtension.class)
-public class InterviewQuestionServiceImplTest {
 
-    @Mock
-    private InterviewQuestionRepository interviewQuestionRepository;
-
-    @Mock
-    private InterviewRoundRepository interviewRoundRepository;
-
-    @InjectMocks
-    private InterviewQuestionServiceImpl interviewQuestionService;
-
-    private ApplicationUser user;
-    private CompanyApplication company;
-    private InterviewExperience experience;
-    private InterviewRound round;
-    private InterviewQuestion question;
 
     @BeforeEach
     void setUp() {
